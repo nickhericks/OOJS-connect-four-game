@@ -13,7 +13,7 @@ This project uses Object-Oriented JavaScript to create an online version of a Co
 ## Project objective
 <!-- To complete this project I built customized conditional behavior and interactivity. Form validation is handled on the client side using JavaScript and regular expressions, with customized error messages for each field. Also, jQuery is used in this project which allowed for a shorter and simplified syntax. -->
 
-## Techniques and concepts:
+## Techniques and concepts
 <!-- - jQuery - For document traversal/manipulation, event handling and animation
 - Regular Expressions - For form validation
 - Progressive Enhancement - JavaScript added without making the page dependent upon JavaScript. -->
