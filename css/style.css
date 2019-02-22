@@ -145,6 +145,7 @@ circle {
 #game-over {
 	display: none;
 	position: absolute;
+  font-size: 3rem;
 	z-index: 100;
 	top: -60px;
 	left: 0;
