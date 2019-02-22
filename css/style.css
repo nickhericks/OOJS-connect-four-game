@@ -21,7 +21,7 @@ body {
 }
 
 .table {
-  background-color: #645a7e;
+  background-color: rgba(99, 110, 114,1.0);
   z-index: 10;
   width: 100%;
   position: fixed;
@@ -30,7 +30,7 @@ body {
 
 #begin-game {
 	width: 200px;
-	background-color: #645a7e;
+	background-color: rgb(7, 27, 38);
 	border-radius: 8px;
   color: #fff;
 	padding: 25px;
@@ -41,7 +41,7 @@ body {
 	top: 200px;
 	z-index: 200;
 	cursor: pointer;
-	border: none;
+	border: 4px #aaa solid;
   font-family: 'Wendy One', sans-serif;
   font-size: 25px;
 }
@@ -143,10 +143,10 @@ circle {
 
 /* TEXT CONTENT */
 #game-over {
-display: none;
-position: absolute;
-z-index: 100;
-top: -60px;
-left: 0;
-right: 0;
+	display: none;
+	position: absolute;
+	z-index: 100;
+	top: -60px;
+	left: 0;
+	right: 0;
 }

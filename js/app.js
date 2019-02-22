@@ -1,16 +1,13 @@
 
 const startButton = document.querySelector('#begin-game');
+const game = new Game();
 
 
 
-
-
-  const newGame = new Game();
-  console.log(newGame);
-  console.log(newGame.board);
-  console.log(newGame.players);
-  console.log(newGame.ready);
-
+console.log(game);
+console.log(game.board);
+console.log(game.players);
+console.log(game.ready);
 
 
 /**
@@ -18,9 +15,17 @@ const startButton = document.querySelector('#begin-game');
  */
 startButton.addEventListener('click', function() {
 
-  newGame.startGame();
+  game.startGame();
 
   this.style.display = 'none';
   document.getElementById('play-area').style.opacity = '1';
 
+  console.log(game);
+});
+
+/**
+ * Listen for keyboard presses
+ */
+document.addEventListener('keydown', function(event) {
+  game.handleKeydown(event);
 });

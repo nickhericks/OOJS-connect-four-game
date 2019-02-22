@@ -7,6 +7,28 @@ class Player {
     this.tokens = this.createTokens(21);
   }
 
+
+
+  /**
+   * Gets all tokens that have not been dropped
+   * @returns   {array}     Array of all the player's unused tokens
+  **/
+  get unusedTokens() {
+    return this.tokens.filter(token => !token.dropped);
+  }
+
+  /**
+   * Gets the active token
+   * @returns   {Object}     First token in the array of unusedTokens.
+  **/
+  get activeToken() {
+    return this.unusedTokens[0];
+  }
+
+
+
+
+
   /**
    * Creates token objects for player
    * @param     {number}    num - Number of token objects to be created
