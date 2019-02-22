@@ -17,6 +17,7 @@ document.querySelector('#begin-game').addEventListener('click', function() {
  */
 document.addEventListener('keydown', function(event) {
   game.handleKeydown(event);
+  console.log(event.key);
 });
 
 

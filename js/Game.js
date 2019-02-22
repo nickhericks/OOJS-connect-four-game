@@ -47,7 +47,7 @@ class Game {
         console.log(e.key);
         // Move active token right
         this.activePlayer.activeToken.moveRight(this.board.columns);
-      } else if (e.key === 'ArrowDown') {
+      } else if (e.key === 'ArrowDown' || ' ') {
         console.log(e.key);
         // Drop active token
         this.playToken();
@@ -56,7 +56,7 @@ class Game {
   }
 
   /**
-   * Finds Space object to drop Token into, drops Token
+   * Finds Space object to drop Token into, then drops Token
    */
   playToken(){
     let spaces = this.board.spaces;

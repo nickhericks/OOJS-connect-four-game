@@ -18,7 +18,7 @@ To complete this project I created JavaScript classes (Game, Board, Space, Playe
 
 ## Code example
 ```javascript
-// Finds Space object to drop Token into, drops Token
+// Finds Space object to drop Token into, and drops Token.
 playToken(){
   let spaces = this.board.spaces;
   let activeToken = this.activePlayer.activeToken;
