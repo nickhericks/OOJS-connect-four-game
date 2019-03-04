@@ -3,14 +3,26 @@ body {
   margin: 0;
   padding: 0;
   background-color: #303853;
-	font-family: 'Wendy One', sans-serif;
-	font-size: 1.5em;
-	color: white;
-	text-align: center;
-  background: rgb(48,56,83); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(48,56,83,1) 0%, rgba(32,38,55,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(48,56,83,1) 0%,rgba(32,38,55,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(48,56,83,1) 0%,rgba(32,38,55,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font-family: "Wendy One", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  background: rgb(48, 56, 83); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(48, 56, 83, 1) 0%,
+    rgba(32, 38, 55, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(48, 56, 83, 1) 0%,
+    rgba(32, 38, 55, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(48, 56, 83, 1) 0%,
+    rgba(32, 38, 55, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303853', endColorstr='#202637',GradientType=0 ); /* IE6-9 */
 }
 
@@ -21,7 +33,7 @@ body {
 }
 
 .table {
-  background-color: rgba(99, 110, 114,1.0);
+  background-color: rgba(99, 110, 114, 1);
   /* background-color: white; */
   z-index: 10;
   width: 100%;
@@ -30,42 +42,42 @@ body {
 }
 
 #begin-game {
-	width: 200px;
-	background-color: rgb(7, 27, 38);
-	border-radius: 8px;
+  width: 200px;
+  background-color: rgb(7, 27, 38);
+  border-radius: 8px;
   color: #fff;
-	padding: 25px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	top: 200px;
-	z-index: 200;
-	cursor: pointer;
-	border: 4px #aaa solid;
-  font-family: 'Wendy One', sans-serif;
+  padding: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 200px;
+  z-index: 200;
+  cursor: pointer;
+  border: 4px #aaa solid;
+  font-family: "Wendy One", sans-serif;
   font-size: 3rem;
 }
 
 /* BOARD AND PIECES */
 #game-board {
-	position: relative;
-	width: 548px;
-	margin: 0 auto;
-	border: 8px solid #5FCF80;
-	height: 472px;
-	border-radius: 7px;
-	float: left;
+  position: relative;
+  width: 548px;
+  margin: 0 auto;
+  border: 8px solid #5fcf80;
+  height: 472px;
+  border-radius: 7px;
+  float: left;
   z-index: 15;
   box-sizing: border-box;
 }
 
 #game-board-underlay {
   position: absolute;
-	width: 548px;
-	height: 472px;
+  width: 548px;
+  height: 472px;
   box-sizing: border-box;
-	margin: 0 auto;
+  margin: 0 auto;
   left: 0;
   right: 0;
   border: 16px solid transparent;
@@ -75,14 +87,14 @@ body {
   margin: 0 auto;
   width: 750px;
   margin-top: 100px;
-	opacity: 0;
+  opacity: 0;
 }
 
 .token {
   width: 60px;
   height: 60px;
-	transform: scale(1.1);
-	transform-origin: center;
+  transform: scale(1.1);
+  transform-origin: center;
   border-radius: 100%;
   position: absolute;
   top: -50px;
@@ -91,7 +103,6 @@ body {
 circle {
   stroke-width: 16px;
 }
-
 
 /* BOARD STAND */
 .stand-container {
@@ -141,42 +152,55 @@ circle {
   top: 350px;
 }
 
-
 /* TEXT CONTENT */
 #game-over {
-	display: none;
-	position: absolute;
+  display: none;
+  position: absolute;
   font-size: 3rem;
-	z-index: 100;
-	top: -60px;
-	left: 0;
-	right: 0;
+  z-index: 100;
+  top: -60px;
+  left: 0;
+  right: 0;
 }
 
-
+/* GITHUB RIBBON */
 .github-ribbon {
-  border-top: 4px #f3c973 solid;
-  padding: 10px 25px 10px 15px;
+  border-bottom: 4px #f3c973 solid;
+  padding: 10px 40px 10px 15px;
   z-index: 1000;
   position: fixed;
-  right: -10px;
+  right: -155px;
   bottom: 5%;
   font-family: sans-serif;
   font-size: 2rem;
   background-color: #000;
 
-  box-shadow: -15px 15px 25px 0px rgba(46,61,73,0.2);
-  border-radius: .375rem;
+  box-shadow: -15px 15px 25px 0px rgba(46, 61, 73, 0.2);
+  border-radius: 0.375rem;
   overflow: hidden;
   -webkit-transition: box-shadow 2s; /* Safari */
-  transition: box-shadow .3s;
+  transition: box-shadow 0.3s;
+  transition: right 0.7s;
 }
 
 .github-ribbon:hover {
-  box-shadow:  1px 1px 7px 0 rgba(46,61,73,0.2);
+  box-shadow: 1px 1px 7px 0 rgba(46, 61, 73, 0.2);
+  right: -20px;
 }
 
 .github-ribbon a {
   text-decoration: none;
   color: #f4f5f4;
+  display: flex;
+  align-items: center;
+}
+
+.github-ribbon i {
+  display: block;
+}
+
+.github-ribbon span {
+  font-size: 1rem;
+  padding-left: 1rem;
+  display: block;
 }
