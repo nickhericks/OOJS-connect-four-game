@@ -163,6 +163,19 @@ circle {
   right: 0;
 }
 
+/* PAGE TITLE */
+#game-title {
+  margin: 40px 0 20px 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #e15258, #e59a13);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* GITHUB RIBBON */
 .github-ribbon {
   border-bottom: 4px #f3c973 solid;
